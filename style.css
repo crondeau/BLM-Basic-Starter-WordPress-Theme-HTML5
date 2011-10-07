@@ -1,0 +1,354 @@
+/*
+Theme Name: Bluelime Media Basic Starter theme	
+Theme URI: http://www.bluelimemedia.com
+Description: Basic html5 starter theme
+Version: 1.0
+License: GNU General Public License
+License URI: GPL.txt
+Author: Christine Rondeau
+Author URI: http://www.bluelimemedia.com
+*/
+
+@import url("reset.css");
+
+/* Images
+----------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin: 4px 24px 12px 0;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin:4px 0 12px 24px;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 4px auto 12px auto;
+}
+.wp-caption {
+	background: #fff;
+	margin-bottom: 20px; padding: 4px;
+	border:1px solid #f6f6f6;
+}
+.wp-caption img { margin: 5px 5px 0;}
+.wp-caption-text {
+	margin: 5px;
+	color: #aaa;
+	text-align:center;
+	font-size:11px; 
+}
+
+/* General Styles 
+----------------------------------------------*/
+.clear {clear: both;}
+a {color:#666;}
+a:hover {color:#000;}
+p {padding:0 0 15px 0;}
+h1, h2, h3, h4, h5, h6 {
+	color:#444;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+}
+h1 {
+	margin:0 0 10px 0;
+	font-size:24px; line-height:30px;
+}
+h2, h2 a, h3, h4, h5, h6 { 
+	margin:10px 0;
+	font-size:18px; line-height:26px;
+}
+h2 a  {text-decoration:none; }
+h1 a:hover, h2 a:hover {text-decoration:underline; }
+blockquote{
+	color: #d4d4d4;
+	border-top:1px solid #d4d4d4;
+	border-bottom:1px solid #d4d4d4;
+	padding:10px; margin:10px 0;
+	font-size:16px;
+	font-style:italic;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Main Layout
+-----------------------------------------------*/
+body {
+	margin: 0px; padding: 0px;
+	background:#eee;
+	color: #333;
+	font:14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;	
+}
+#wrap {
+	position:relative;
+	width: 960px;
+	margin: 0px auto 0px auto; padding:0;
+	background:#FFF;
+}
+/* Header Area 
+-----------------------------------------------------------*/
+header {
+	float:left;
+	width:960px; height:180px;
+	background:url(images/header.gif) 50% top no-repeat;
+}
+#logo a {
+	display:block;
+	float:left;
+	width: 100px; height: 80px;
+	margin:20px 0 0 60px;
+	text-indent:-9999em;
+	outline:0;
+}
+#tagline {
+	width:400px;
+	float:left; 
+	font-size: 14px;
+	font-style:italic;
+	color:#333;
+	padding:120px 0 0 30px;
+}
+
+/* Primary Navigation
+-------------------------------------------------------------- */
+#top_nav {
+	float:left;
+	width:960px;
+	background:#e5e5e5;
+}
+#top_nav .menu-header ul, div.menu ul { 
+	list-style: none; 
+	font-size:16px;
+	margin:0; padding:0;
+}
+#top_nav .menu-header li, div.menu li {
+	float:left;
+	position: relative;
+}
+#top_nav a {
+	display:block;
+	text-decoration:none;
+	color:#000;
+	padding:10px 15px;
+}
+#top_nav ul li a:hover, 
+#top_nav ul li.current_page_item a,
+#top_nav ul li.current_page_parent a,
+#top_nav ul li.current_page_ancestor a,
+#top_nav ul li.current-menu-ancestor a, 
+#top_nav ul li.current-menu-item a,
+#top_nav ul li.current-menu-parent a {
+	color:#fff;
+	background:#000;
+}
+
+/* Drop down menu */
+#top_nav ul ul {
+	display:none;
+	position:absolute;
+	top:40px; left:0;
+	float:left;
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	width: 180px;
+	z-index: 99999;
+}
+#top_nav ul ul li {
+	min-width: 180px;
+	border-bottom:1px solid #d4d4d4;	
+}
+
+/* Third Level drop down menu */
+#top_nav ul ul ul {
+	left:100%;
+	top:0;
+}
+#top_nav ul ul a,
+#top_nav ul li.current_page_item ul li a,
+#top_nav ul li.current-menu-ancestor ul li a {
+	background:#FFF;
+	color:#000;
+	height:auto;
+	line-height:1em;
+	padding:10px;
+	width: 160px;
+}
+#top_nav ul ul a:hover,
+#top_nav ul li.current_page_item ul li a:hover,
+#top_nav ul li.current-menu-ancestor ul li a:hover {
+	color:#fff;
+	background:#000;
+}
+#top_nav ul li:hover ul {display:block;}
+
+
+/* Main Body Content Area 
+-----------------------------------------------------------*/
+#main {
+	float:left;
+	width:940px;
+	padding:10px;
+}
+#content {
+	float: left;
+	width:600px;
+	padding: 20px;
+}
+
+/* Main body blog content formatting
+--------------------------------------------------------------*/
+.hentry {padding:0 0 20px 0;}
+.hentry ul, .hentry ol {	
+	margin: 0 20px 5px 20px; 
+	padding:0 20px 5px 20px; 
+	font-size:14px; 
+	line-height:20px;
+}
+.entrymeta {
+	margin:10px 0; padding:6px;
+	color: #999;
+	border-top:dotted 1px #d4d4d4;
+}
+.entrymeta p {
+	padding:3px 0; 
+	font-size:12px;
+}
+.post-navigation {padding:10px 0;} 
+.navigation-previous {
+	float:left;
+	width:50%;
+	text-align:left;
+}
+.navigation-next {
+	float:right;
+	width:50%;
+	text-align:right;
+}
+
+/* Sidebar Area 
+-------------------------------------------*/
+#sidebar {
+	float:right;
+	width:240px;
+	padding: 0px 20px;
+	background:#eee;
+}
+.widget {padding: 20px 0;}
+#sidebar h4 {
+	margin: 0px 0 2px 0; padding: 0 0 2px 0;
+	border-bottom: 1px solid #d4d4d4;
+	text-transform: uppercase;
+	font-size:14px;
+}
+#sidebar ul {list-style: none;}
+#sidebar ul li {padding:5px 10px;}
+#sidebar a {
+	color: #4d4d4d;
+	text-decoration: none;
+}
+#sidebar a:hover {color: #000;}
+.widget_search label {display:none;}
+
+/* Footer area
+------------------------------------------------------------*/
+footer {
+	clear: both;
+	text-align: center;
+	width:960px;
+	border-top: 1px dotted #d4d4d4;
+	margin:0 auto 0 auto;
+}
+footer p {	
+	font-size:12px; 
+	padding:10px;
+	color:#d4d4d4;
+}
+footer a {
+	text-decoration:none;
+	color:#d4d4d4;
+}
+footer a:hover {
+	text-decoration:underline;
+	color:#d4d4d4;
+}
+
+/* Comments													
+-----------------------------------------------------*/
+h3#comments { margin:30px 0 10px 0; }		
+.avatar {
+	float: left;
+	display:block;
+	padding: 0 20px 10px 0px;
+}		
+#commentlist {padding: 20px 0px;}
+#commentlist .bypostauthor {}
+.commentmetadata {margin-top: 0;}
+ol#commentlist, ol#commentlist li {	
+	list-style: none;
+	margin:0; padding:0;
+}
+ol#commentlist li {
+	padding:10px; margin:15px 0;
+	border:1px solid #eee;
+}
+ol#commentlist ul.children {
+	margin:10px 10px 0 25px;
+	padding:0;
+}
+ol#commentlist ul.children li {
+	border:none;
+	border-top:1px solid #eee;
+}
+ol#commentlist li p {
+	padding:6px 0;
+	font-size:14px; 
+	line-height:20px;
+}
+#commentform {padding:20px 0;}
+#commentform p {margin-bottom:10px;}
+
+
+/* Respond (comments form area)
+-----------------------------------------------------*/
+#respond {padding: 0 1px;}
+#reply-title {}
+#respond form {
+	overflow: hidden;
+	padding: 20px 19px 4px 19px;
+	border: 1px solid #eee;
+}
+#respond label {
+	padding: 0 0 10px 0px;
+	font-size: 14px;
+}
+#respond p{margin: 0 0 15px;}
+#respond .required {color: #ba0000;}
+#respond input[type="text"], #respond input[type="email"], #respond input[type="url"] {
+	display: block;
+	width: 230px;
+	height: 33px;
+	padding: 0 10px;
+	color: #333;	
+}
+#respond textarea {
+	width: 93%;
+	padding: 10px;
+	color: #333;
+	border: 1px solid #eee;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+#submit,.reply a {
+	background:#333;
+	color:#fff;
+	font-size: 14px;
+	border: none;
+	padding:3px 10px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;	
+	text-decoration:none;
+}
+#submit:hover {cursor: pointer;	}
+
+.form-allowed-tags {display:none;}/* Hides all the crap about html tags*/
