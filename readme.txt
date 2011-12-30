@@ -4,6 +4,12 @@ This basic starter theme is an html5 version of my original basic starter theme.
 (https://github.com/crondeau/BLM-Basic-WordPress-theme)
 It's exactly the same as the original but html5 ready.
 
+The basic theme was started 4 years ago with a now retired theme call by fSpring widgets by Fredrik Fahlstad.
+At the time, Kubrick was very popular but I felt it just contained too much junk.
+Using the fSpring widgets theme, I cleaned it up and created a basic starter theme to use for all of my custom themes.
+
+With the release of Twenty Eleven, Twenty Ten, Sandbox, Joachim Kudish, Devin Price's Portfolio theme, Michael Fields Ghostbird and Elliot Jay Stocks, Starkers, I've had the chance to look at how things are now done and I've refined my theme and improved it immensely.
+
 --------------------------------------------------------
 
 THIS THEME IS TO BE USED FOR BUILDING CUSTOM THEMES ONLY.

@@ -9,24 +9,24 @@ Author: Christine Rondeau
 Author URI: http://www.bluelimemedia.com
 */
 
-@import url("reset.css");
+@import url("normalize.css");
 
 /* Images
 ----------------------------------------------*/
 .alignleft {
 	display: inline;
 	float: left;
-	margin: 4px 24px 12px 0;
+	margin: 0px 10px 10px 0;
 }
 .alignright {
 	display: inline;
 	float: right;
-	margin:4px 0 12px 24px;
+	margin:0px 0 10px 10px;
 }
 .aligncenter {
 	clear: both;
 	display: block;
-	margin: 4px auto 12px auto;
+	margin: 0px auto 10px auto;
 }
 .wp-caption {
 	background: #fff;

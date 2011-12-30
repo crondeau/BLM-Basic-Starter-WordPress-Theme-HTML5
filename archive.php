@@ -12,13 +12,13 @@
 			<h1>Posts Tagged: <?php single_tag_title(); ?></h1>
 			
 		<?php }elseif (is_day()) { ?>
-			<h1>Archive for <?php the_time('F jS, Y'); ?></h1>
+			<h1>Archive for <?php echo get_the_date(); ?></h1>
 			
 		<?php }elseif (is_month()) { ?>
-			<h1>Archive for <?php the_time('F, Y'); ?></h1>
+			<h1>Archive for <?php echo get_the_date( _x( 'F Y', 'monthly archives date format', 'blm_basic' ) ) ?></h1>
 			
 		<?php }elseif (is_year()) { ?>
-			<h1>Archive for <?php the_time('Y'); ?></h1>
+			<h1>Archive for <?php echo get_the_date( _x( 'Y', 'yearly archives date format', 'blm_basic' ) ) ?></h1>
 			
 		<?php } elseif (is_search()) { ?>
 			<h1>Search Results</h1>
@@ -35,7 +35,7 @@
 	
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	    	<h2><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-		 	<?php the_content(__('Read more'));?>
+		 	<?php the_content(__('Read more', 'blm_basic'));?>
 				
 			<?php get_template_part('inc/meta'); ?>
 		</article>
@@ -43,7 +43,8 @@
 	  <?php comments_template(); ?>
 	  <?php endwhile; else: ?>
 			
-		  <p>Sorry, seems like there aren't any posts.</p>
+
+		<p><?php _e( 'Sorry, there are currently no posts.', 'blm_basic' ); ?></p>
 		
 	  <?php endif; ?>
 	  <?php get_template_part('inc/nav'); ?>
