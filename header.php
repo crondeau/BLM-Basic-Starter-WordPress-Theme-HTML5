@@ -15,7 +15,7 @@
 <body <?php body_class(); ?>>
 <div id="wrap">
 	<header id="branding">
-		<div id="logo"><a href="<?php echo site_url() ?>/"><?php bloginfo('name'); ?></a></div>
+		<div id="logo"><a href="<?php echo home_url() ?>/"><?php bloginfo('name'); ?></a></div>
 		<div id="tagline"><?php bloginfo('description'); ?></div>
 	</header>
 	<nav id="top_nav">
