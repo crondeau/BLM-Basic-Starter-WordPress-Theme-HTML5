@@ -10,8 +10,8 @@
 			<?php get_template_part('inc/meta'); ?>
 			
 			<nav class="post-navigation">
-				<div class="navigation-previous"><?php previous_post_link('&laquo; %link') ?></div>
-				<div class="navigation-next"><?php next_post_link('%link &raquo;') ?></div>
+				<div class="nav-previous"><?php previous_post_link('&laquo; %link') ?></div>
+				<div class="nav-next"><?php next_post_link('%link &raquo;') ?></div>
 			</nav>
 		</article>
 

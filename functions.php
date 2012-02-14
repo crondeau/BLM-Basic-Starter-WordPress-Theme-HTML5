@@ -47,16 +47,11 @@ function blm_register_sidebars() {
 }
 
 function blm_init_method() {
-	/* Load jQuery but only in front end */
-	if ( !is_admin() ) { 
-		wp_enqueue_script('jquery');
-	}
 
 	/* Load the comment reply JavaScript. */
 	if ( is_singular() && get_option( 'thread_comments' ) && comments_open() )
 		wp_enqueue_script( 'comment-reply' );
 }
-
 add_action('wp_enqueue_scripts', 'blm_init_method');
 
 // remove junk from head

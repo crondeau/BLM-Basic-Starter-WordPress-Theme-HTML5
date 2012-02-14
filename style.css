@@ -213,12 +213,12 @@ body {
 	font-size:12px;
 }
 .post-navigation {padding:10px 0;} 
-.navigation-previous {
+.nav-previous {
 	float:left;
 	width:50%;
 	text-align:left;
 }
-.navigation-next {
+.nav-next {
 	float:right;
 	width:50%;
 	text-align:right;

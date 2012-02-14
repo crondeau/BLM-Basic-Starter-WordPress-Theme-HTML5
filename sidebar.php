@@ -1,5 +1,5 @@
 <section id="sidebar">
-	<?php if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
+	<?php if ( ! dynamic_sidebar( 'primary' ) ) : ?>
 
 		<aside id="search" class="widget widget_search">
 			<?php get_search_form(); ?>
