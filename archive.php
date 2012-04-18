@@ -1,6 +1,9 @@
 <?php get_header(); ?>
-<section id="main">
+
+<div id="main">
+	
 	<section id="content">
+		
 	<?php if (have_posts()) : ?>
 	
 		<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
@@ -11,13 +14,13 @@
 		<?php } elseif( is_tag() ) { ?>
 			<h1>Posts Tagged: <?php single_tag_title(); ?></h1>
 			
-		<?php }elseif (is_day()) { ?>
+		<?php } elseif (is_day()) { ?>
 			<h1>Archive for <?php echo get_the_date(); ?></h1>
 			
-		<?php }elseif (is_month()) { ?>
+		<?php } elseif (is_month()) { ?>
 			<h1>Archive for <?php echo get_the_date( _x( 'F Y', 'monthly archives date format', 'blm_basic' ) ) ?></h1>
 			
-		<?php }elseif (is_year()) { ?>
+		<?php } elseif (is_year()) { ?>
 			<h1>Archive for <?php echo get_the_date( _x( 'Y', 'yearly archives date format', 'blm_basic' ) ) ?></h1>
 			
 		<?php } elseif (is_search()) { ?>
@@ -26,31 +29,37 @@
 		<?php } elseif (is_author()) { ?>
 			<h1>Author Archive</h1>
 			
-		<?php }elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
+		<?php } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 			<h1>Blog Archives</h1>
 			
 		<?php } ?>
 	
 	<?php while (have_posts()) : the_post(); ?>
-	
+			
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			
 	    	<h2><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-		 	<?php the_content(__('Read more', 'blm_basic'));?>
+	
+		 	<?php the_content(__( 'Read more', 'blm_basic' ));?>
 				
-			<?php get_template_part('inc/meta'); ?>
+			<?php get_template_part( 'inc/meta' ); ?>
+			
 		</article>
 	
 	  <?php comments_template(); ?>
+	
 	  <?php endwhile; else: ?>
 			
-
 		<p><?php _e( 'Sorry, there are currently no posts.', 'blm_basic' ); ?></p>
 		
 	  <?php endif; ?>
-	  <?php get_template_part('inc/nav'); ?>
+	
+	  <?php get_template_part( 'inc/nav' ); ?>
 		  
-	</section>
+	</section><!-- #content -->
 
 <?php get_sidebar(); ?>
-</section>
+
+</div><!-- #main -->
+
 <?php get_footer(); ?>

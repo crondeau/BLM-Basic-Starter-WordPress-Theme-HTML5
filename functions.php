@@ -22,7 +22,7 @@ add_action( 'widgets_init', 'blm_register_sidebars' );
 
 // Add menu features 
 function blm_register_menus() {
-	register_nav_menus(array('primary'=>__('Primary Menu'),));
+	register_nav_menus(array('primary'=>__( 'Primary Menu' ), ));
 }
 
 // Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
