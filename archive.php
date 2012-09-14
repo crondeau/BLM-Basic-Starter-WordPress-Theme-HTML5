@@ -26,10 +26,10 @@
 		<?php } elseif (is_search()) { ?>
 			<h1>Search Results</h1>
 			
-		<?php } elseif (is_author()) { ?>
+		<?php } elseif ( is_author() ) { ?>
 			<h1>Author Archive</h1>
 			
-		<?php } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
+		<?php } elseif ( isset($_GET['paged'] ) && !empty( $_GET['paged']) ) { ?>
 			<h1>Blog Archives</h1>
 			
 		<?php } ?>
