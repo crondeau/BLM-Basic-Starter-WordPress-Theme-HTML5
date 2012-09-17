@@ -271,7 +271,7 @@ body {
 	background:#000;
 }
 
-#top_nav ul li:hover ul {display:block;}
+#top_nav ul li:hover > ul {display:block;}
 
 
 /* Main Body Content Area 
