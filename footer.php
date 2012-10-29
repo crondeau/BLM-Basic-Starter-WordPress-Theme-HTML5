@@ -1,3 +1,10 @@
+<?php
+/**
+ * The template for displaying the footer.
+ * 
+ * @package blm_basic
+ */
+?>
 	<footer>
 		<p>&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p>
 	</footer>

@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying 404 pages (Not Found).
+ *
+ * @package blm_basic
+ */
+
+get_header(); ?>
 
 <div id="main">
 	

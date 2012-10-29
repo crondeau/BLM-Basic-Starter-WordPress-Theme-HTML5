@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying Search Results pages.
+ *
+ * @package blm_basic
+ */
+
+get_header(); ?>
 
 <div id="main">
 	

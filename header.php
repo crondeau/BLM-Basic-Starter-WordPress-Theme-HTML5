@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php
+/**
+ * The Header for our theme.
+ *
+ * Displays all of the <head> section, header and top navigation areas
+ *
+ * @package blm_basic
+ *
+ */
+?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -21,6 +30,6 @@
 		<div id="tagline"><?php bloginfo( 'description' ); ?></div>
 	</header>
 	
-	<nav id="top_nav">
+	<nav id="top-nav">
 		<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 	</nav>

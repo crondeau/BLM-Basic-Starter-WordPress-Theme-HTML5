@@ -1,4 +1,12 @@
 <?php
+/**
+ * blm_basic functions and definitions
+ *
+ * @package blm_basic
+ */
+
+
+
 add_action( 'after_setup_theme', 'blm_theme_setup' );
 function blm_theme_setup() {
 

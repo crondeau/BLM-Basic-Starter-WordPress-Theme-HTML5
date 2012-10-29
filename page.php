@@ -1,4 +1,11 @@
-<?php get_header(); ?> 
+<?php
+/**
+ * This template will be used to display page content.
+ *
+ * @package blm_basic
+ */
+
+get_header(); ?>
 
 <div id="main">
 	

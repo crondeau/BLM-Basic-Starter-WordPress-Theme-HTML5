@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Master Template. This template will be used to display your blog posts and pages if page.php does not exist.
+ *
+ * @package blm_basic
+ */
+
+get_header(); ?>
 
 <div id="main">
 	

@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The Template for displaying all single posts.
+ *
+ * @package blm_basic
+ */
+
+get_header(); ?>
 
 <div id="main">
 	

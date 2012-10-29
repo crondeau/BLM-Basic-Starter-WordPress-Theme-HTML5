@@ -1,3 +1,11 @@
+<?php
+/**
+ * The Sidebar containing the main widget areas.
+ * If no widgets are set, the content below will be displayed
+ *
+ * @package blm_basic
+ */
+?>
 <section id="sidebar">
 	
 	<?php if ( ! dynamic_sidebar( 'primary' ) ) : ?>
