@@ -6,7 +6,6 @@
  */
 
 
-
 add_action( 'after_setup_theme', 'blm_theme_setup' );
 function blm_theme_setup() {
 
@@ -60,7 +59,7 @@ function blm_init_method() {
 	if ( is_singular() && get_option( 'thread_comments' ) && comments_open() )
 		wp_enqueue_script( 'comment-reply' );
 }
-add_action('wp_enqueue_scripts', 'blm_init_method');
+add_action( 'wp_enqueue_scripts', 'blm_init_method' );
 
 // remove junk from head
 remove_action( 'wp_head', 'rsd_link' );
