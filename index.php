@@ -23,15 +23,7 @@ get_header(); ?>
 
 		</article>
 		
-	<?php comments_template(); ?>
-		
-	<?php endwhile; else: ?>
-	
-	    <h2><?php _e( 'Not Found', 'blm_basic' ); ?></h2>
-	
-		<p><?php _e( 'Sorry, you seem to be looking for something that simply is not here.', 'blm_basic' ); ?></p>
-		
-	<?php endif; ?>
+	<?php endwhile; endif; ?>
 	
 	<?php get_template_part( 'inc/nav' ); ?>
 	

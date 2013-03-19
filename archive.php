@@ -55,13 +55,7 @@ get_header(); ?>
 			
 		</article>
 	
-	  <?php comments_template(); ?>
-	
-	  <?php endwhile; else: ?>
-			
-		<p><?php _e( 'Sorry, there are currently no posts.', 'blm_basic' ); ?></p>
-		
-	  <?php endif; ?>
+	  <?php endwhile; endif; ?>
 	
 	  <?php get_template_part( 'inc/nav' ); ?>
 		  

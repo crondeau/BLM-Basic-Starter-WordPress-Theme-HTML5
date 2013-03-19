@@ -26,8 +26,8 @@ get_header(); ?>
 		</article>
 		
 	  <?php endwhile; else: ?>
-		
-	  <p>Sorry, no posts matched your criteria. Please try another keyword.</p>
+
+		<p><?php _e( 'Sorry, no posts matched your criteria. Please try another keyword.', 'blm_basic' ); ?></p>
 	
 	  <?php endif; ?>
 	
