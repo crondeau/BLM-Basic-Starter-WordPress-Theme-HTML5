@@ -51,6 +51,8 @@ function blm_register_sidebars() {
 }
 
 function blm_init_method() {
+	
+	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 	/* Load the comment reply JavaScript. */
 	if ( is_singular() && get_option( 'thread_comments' ) && comments_open() )
